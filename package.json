@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@langchain/community": "^0.0.55",
     "ai": "2.2.16",
-    "langchain": "^0.0.129",
+    "langchain": "^0.1.36",
     "next": "13.4.12",
+    "pdf-parse": "^1.1.1",
     "react": "18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "zlib": "^1.0.5"
   },
   "devDependencies": {
     "@types/node": "^17.0.12",

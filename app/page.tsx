@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useChat } from 'ai/react';
+import { useChat } from "ai/react";
 
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
@@ -8,9 +8,9 @@ export default function Chat() {
   return (
     <div className="mx-auto w-full max-w-md py-24 flex flex-col stretch">
       {messages.length > 0
-        ? messages.map(m => (
+        ? messages.map((m) => (
             <div key={m.id} className="whitespace-pre-wrap mb-4">
-              <b>{m.role === 'user' ? 'User: ' : 'AI: '}</b>
+              <b>{m.role === "user" ? "User: " : "AI: "}</b>
               {m.content}
             </div>
           ))
